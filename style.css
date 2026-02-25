@@ -204,6 +204,7 @@ footer p {
     justify-content: center;
     padding: 10px;
     gap: 5px;
+    height: 75px;
 }
 .immagine {
     width: 100%;
