@@ -145,8 +145,12 @@ main {
     width: 100%;
 }
 
-h1, h2 {
+h1{
     text-align: center;
+}
+
+h1, h2 {
+    clear: both;
 }
 
 .card {
@@ -217,12 +221,63 @@ footer p {
     width: 100%;
 }
 
+.img-container {
+    width: 40%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 15px;
+}
+
+.mytab {
+    
+}
+
 
 @media (max-width: 768px) {
     main {
         width: 100%;
     }
+    .sidenav {
+        display: none;
+    }
     .titolo-home {
         font-size: 50px;
+    }
+
+    .card {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .card__dx {
+        width: 100%;
+    }
+    .card__sx {
+        width: 100%;
+    }
+    .card__dx__txt h3 {
+        /* font-size: 20px; */
+        margin-top: 5px;
+    }
+
+    .img-container {
+        width: 100%;
     }
 }
