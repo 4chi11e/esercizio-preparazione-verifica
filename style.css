@@ -35,47 +35,17 @@ nav {
     height: 100%;
 }
 
-.tenda {
-    position: relative; /* serve per posizionare il figlio che se no non eredita una posizione definita */
-    width: 100px;
-}
-
-.tenda__panel {
-    position: absolute; /* serve per il posizionamento */
-    /* top: 50px; */ /* posiziona sotto il genitore indicando hardcoded la misura, meglio fare 100% */
-    top: 100%;  /* posiziona il pannello subito sotto l'elemento genitore, 100% del genitore */
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s ease-in-out;
-}
-
-.tenda:hover .tenda__panel {
-    max-height: 500px;
-}
-
-.tenda__li {
-    display: block;     /* perchè se lo applico ad un a che è inline devo specificarlo */
-    height: 50px;
-    line-height: 50px;  /* allinea verticalmente il testo */
-    padding: 0 15px;    /* solo spazio orizzontale */
-    background-color: rgb(150,150,150);
-}
-
-.tenda__li--active {
-    background-color: lightgray;
-}
-
-.tenda__li:hover {
-    background-color: lightgray;
-}
-
-nav a {
+.nav__bottone {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
     text-decoration: none;
     color: black;
+}
+
+.nav__bottone:hover, .nav__bottone--active {
+    background-color: lightgray;
 }
 
 .icona {
