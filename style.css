@@ -27,6 +27,18 @@ body {
     /* border: 2px solid blue; */
 }
 
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+    .sidenav {
+        display: none;
+    }
+    .titolo-home {
+        font-size: 50px;
+    }
+}
+
 
 
 /* HEADER */
@@ -167,6 +179,23 @@ h1, h2 {
     font-size: 26px;
 }
 
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .card__dx {
+        width: 100%;
+    }
+    .card__sx {
+        width: 100%;
+    }
+    .card__dx__txt h3 {
+        /* font-size: 20px; */
+        margin-top: 5px;
+    }
+}
+
 
 
 /* GRIGLIA */
@@ -220,36 +249,7 @@ footer p {
 
 
 
-/* COMPONENTI VARIE */
-
-.titolo-home {
-    font-size: 100px;
-    text-align: center;
-}
-
-.contenitore-pagina-immagine {
-    background-color: lightgray;
-    min-height: 100%;
-    text-align: center;
-}
-
-.pulsanti {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    gap: 5px;
-    height: 75px;
-}
-.immagine {
-    width: 100%;
-    font-size: 0px;
-    padding: 10px;
-    overflow: hidden;
-}
-.immagine img {
-    display: block;
-    width: 100%;
-}
+/* IMMAGINI FLOTTATE */
 
 .img-container {
     width: 40%;
@@ -259,6 +259,12 @@ footer p {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .img-container {
+        width: 100%;
+    }
 }
 
 .float-left {
@@ -275,6 +281,10 @@ footer p {
     float: right;
     margin-left: 15px;
 }
+
+
+
+/* TABELLA */
 
 .mytab {
     margin: auto;
@@ -299,34 +309,41 @@ footer p {
 
 
 
+/* PAGINA IMMAGINE */
 
-@media (max-width: 768px) {
-    main {
-        width: 100%;
-    }
-    .sidenav {
-        display: none;
-    }
-    .titolo-home {
-        font-size: 50px;
-    }
-
-    .card {
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-    .card__dx {
-        width: 100%;
-    }
-    .card__sx {
-        width: 100%;
-    }
-    .card__dx__txt h3 {
-        /* font-size: 20px; */
-        margin-top: 5px;
-    }
-
-    .img-container {
-        width: 100%;
-    }
+.contenitore-pagina-immagine {
+    background-color: lightgray;
+    min-height: 100%;
+    text-align: center;
 }
+
+.pulsanti {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    height: 75px;
+}
+
+.immagine {
+    width: 100%;
+    font-size: 0px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.immagine img {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* COMPONENTI VARIE */
+
+.titolo-home {
+    font-size: 100px;
+    text-align: center;
+}
+
+
