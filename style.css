@@ -1,3 +1,5 @@
+/* GENERALE E LAYOUT */
+
 * {
     box-sizing: border-box;
 }
@@ -19,6 +21,15 @@ body {
     z-index: 0;
 }
 
+.centro-flex {
+    display: flex;
+    align-items: stretch;
+    /* border: 2px solid blue; */
+}
+
+
+
+/* HEADER */
 
 header {
     background-color: rgb(150,150,150);
@@ -74,11 +85,9 @@ nav {
     height: 80%;
 }
 
-.centro-flex {
-    display: flex;
-    align-items: stretch;
-    /* border: 2px solid blue; */
-}
+
+
+/* SIDENAV */
 
 .sidenav {
     background-color: rgb(200, 200, 200);
@@ -105,6 +114,10 @@ nav {
     background-color: rgb(150,150,150);
 }
 
+
+
+/* MAIN  */
+
 main {
     background-color: lightgray;
     /* border: 2px solid red; */
@@ -122,6 +135,10 @@ h1{
 h1, h2 {
     clear: both;
 }
+
+
+
+/* CARDS */
 
 .card {
     display: flex;
@@ -151,6 +168,46 @@ h1, h2 {
 }
 
 
+
+/* GRIGLIA */
+
+.griglia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quad {
+    border: 1px solid darkgray;
+    border-radius: 2px;
+    width: calc(33.333% - 10px);
+    padding: 5px;
+}
+
+.quad__img {
+    width: 100%;
+}
+
+.quad__img img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .quad {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .quad {
+        width: 100%;
+    }
+}
+
+
+/* FOOTER */
+
 footer {
     background-color: rgb(150,150,150);
     /* border: 2px solid red; */
@@ -161,6 +218,9 @@ footer p {
     margin: 0;
 }
 
+
+
+/* COMPONENTI VARIE */
 
 .titolo-home {
     font-size: 100px;
@@ -236,6 +296,8 @@ footer p {
 .contenitore-tabella-scrollabile {
     overflow-x: auto;
 }
+
+
 
 
 @media (max-width: 768px) {
