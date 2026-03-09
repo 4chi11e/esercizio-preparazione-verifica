@@ -24,19 +24,8 @@ body {
 .centro-flex {
     display: flex;
     align-items: stretch;
+    width: 100%;
     /* border: 2px solid blue; */
-}
-
-@media (max-width: 768px) {
-    main {
-        width: 100%;
-    }
-    .sidenav {
-        display: none;
-    }
-    .titolo-home {
-        font-size: 50px;
-    }
 }
 
 
@@ -126,6 +115,15 @@ nav {
     background-color: rgb(150,150,150);
 }
 
+/* metodo 1 col combinator figlio diretto */
+/* .sidenav ul > ul {
+    padding-left: 20px;
+} */
+
+/* metodo 2 con la classe */
+.liv2 {
+    padding-left: 20px !important;
+}
 
 
 /* MAIN  */
@@ -347,3 +345,19 @@ footer p {
 }
 
 
+
+
+
+/* MEDIA QUERY DEL LAYOUT */
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+    .sidenav {
+        display: none;
+    }
+    .titolo-home {
+        font-size: 50px;
+    }
+}
